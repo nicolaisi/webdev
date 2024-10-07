@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style type="text/css">
+      #myname {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myname" onClick="changeColor()">YOUR NAME</p>
+    <script>
+      function changeColor() {
+          console.log("Clicked changeColor() function");
+          let mycolor = document.getElementById("myname").style.color; 
+
+          if (mycolor == "red") {
+              document.getElementById("myname").style.color="blue";
+          } else {
+              document.getElementById("myname").style.color="red";
+          }
+      }
+    </script>
+  </body>
+</html>
